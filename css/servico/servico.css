@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-medium";
+    src: url('../../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url('../../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url('../../fonts/Roboto-Light.ttf');
+}
+
+
+.header-service-bg {
+    background-image: url('../../images/service.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18vh;    
+}
+
+.service-header-titulo {
+    background-color: rgba(2, 22, 53, 0.7);
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    position: relative;
+    top: 35px;
+    border-radius: 4px;
+}
+
+
+.header-service-bg h2 {
+    font-family: "Poppins";
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 580px) {
+    .service-header-titulo {
+        max-width: 80%;
+    }
+    .header-service-bg h2  {
+        font-size: 54px;
+    }
+}
+.veja-servicos-grid {
+    margin-top: 62px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.veja-content-01 h4 {
+    font-family: "Poppins-medium";
+    font-size: 32px;
+}
+
+.veja-content-01 p {
+    margin-top: 20px;
+    font-family: "Roboto";
+}
+
+.veja-content-01 img {
+    margin-top: 100px;
+}
+
+.veja-content-02 .p-principal {
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+div p.p-principal {
+    position: relative;
+}
+
+div p.p-principal::before {
+    content: "";
+    display: block;
+    background-image: url('../../images/ok-gold.svg');
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 10.5px;
+    position: absolute;
+    top: 7px;
+    left: -20px;
+}
+
+.veja-content-02 {
+    background-color: #001D2D;
+    padding: 24px 51px;
+    box-sizing: border-box;
+    color: #fff;    
+}
+
+.veja-content-02 .p-obs {
+    font-family: "Roboto-light";
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    .veja-servicos-grid  {
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+    }
+    .veja-content-01 {
+        padding: 10px;
+    }
+    .veja-content-01 img {
+        display: none;
+    }
+}
+
+.corousel-bg {
+    background-color: #044164;
+}
+
+.servicos-caroucel {
+    margin-top: 40px;
+    background-color: #044164;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.carousel-titulo h4 {
+    font-size: 32px;
+    font-family: "Poppins";
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.corousel-imagem img {
+    max-width: 400px;
+    max-height: 550px;
+    border-radius: 5px;
+}
+
+.btn-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-carousel button {
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px;
+    border: none !important;
+    border-radius: 5px;
+    background-color: #9DD5F5;
+
+}
+
+@media (max-width: 1200px) {
+    .corousel-imagem img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .carousel-titulo h4 {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .corousel-imagem img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+.btn-service {
+    border: none;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border-radius: 4px;
+    color: #fff;
+    background-image: linear-gradient(180deg, #001D2D 0%, #000A0F 92.71%);
+    text-decoration:none !important;
+}
+
+.servicos-conteudo {
+    margin-top: 60px;
+}
+
+.servicos-conteudo p {
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.servicos-conteudo a {
+    display: block;
+    max-width: 142px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.max-carousel {
+    max-width: 400px;
+} 
+
+#segundo-carousel {
+    position: initial !important;
+    width: auto !important;
+
+}
+
+.servicos-realizados {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #DCF2FF;
+    padding: 20px;
+
+}
+
+.servicos-titulo h4 {
+    font-family: "Poppins";
+    font-size: 32px;
+    margin-top: 60px;
+}
+
+.corousel-imagens-secundario img {
+    max-width: 190px;
+    border-radius: 4px;
+    /* margin-top: 20px; */
+}
+
+.imagens-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imagens-flex div img {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.servicos-imagem img {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 4px;
+}
+
+.btn-carousel-secundario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+.btn-carousel-secundario button {
+    padding: 8px;
+    border: none !important;
+    border-radius: 5px;
+    background-color: #9DD5F5;
+}
+
+@media (max-width: 870px)
+{
+    .servicos-conteudo p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .servicos-titulo {
+        display: none;
+    }
+    .servicos-realizados {
+        display: none;
+    }
+
+}
+
+

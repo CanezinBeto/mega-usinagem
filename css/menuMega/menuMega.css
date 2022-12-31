@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../fonts/Poppins-Medium.ttf');
+}
+
+.menu-bg {
+    background-color: #DCF2FF;
+    padding: 1rem;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-usinagem img {
+    max-width: 100%;
+}
+
+.midias-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-flex {
+    display: flex;
+    gap: 40px;
+
+}
+
+.nav-item-menu a {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: var(--p13);
+}
+
+@media (max-width: 710px) {
+    .midias-sociais {
+        display: none;
+    }
+
+    .self-item {
+        margin: 0 auto;
+    }
+
+    .nav-flex {
+        margin-top: 10px;
+    }
+
+    .nav-item-menu {
+        background-color: var(--p04);
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+}

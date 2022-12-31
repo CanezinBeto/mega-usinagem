@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../../../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url('../../../fonts/Roboto-Light.ttf');
+}
+
+.sobre-welcome {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo-welcome p {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    word-break: keep-all;
+}
+
+.logo-welcome p::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 180px;
+    background-color: #3A85B0;
+    position: absolute;
+    left: 250px;
+    top: -10px;
+    border-radius: 2px;
+}
+
+.logo-welcome img {
+    max-width: 160px;
+    margin-top: -15px !important;
+}
+
+.conteudo-welcome {
+    max-width: 90ch;
+}
+
+.conteudo-welcome p{
+    font-family: "Roboto";
+    font-size: 1.25rem;
+}
+
+.conteudo-welcome .conteudo-p {
+    font-size: .875rem;
+}
+
+.conteudo-welcome .conteudo-p2 {
+    font-size: .875rem;
+    margin-top: -10px;
+}
+
+@media (max-width: 850px) {
+    .logo-welcome {
+        text-align: center;
+    }
+    .logo-welcome p::after {
+        display: none;
+    }
+    .sobre-welcome {
+        grid-template-columns: 1fr;
+    }
+    .conteudo-welcome p{
+        font-size: 1rem;
+    }
+    .conteudo-welcome {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+.sobre-bg {
+    background-color: var(--p01);
+    padding: 44px;
+    margin-top: 60px;
+}
+
+.sobre-nos {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+.sobre-descricao h2 {
+    font-family: "Poppins";
+    font-size: 2rem;
+    color: var(--c11);
+}
+
+.sobre-descricao h2 span {
+    color: var(--p07);
+}
+
+.sobre-descricao p {
+    font-family: "Roboto";
+    color: var(--c11);
+}
+
+.sobre-lista li {
+    list-style: url('../../../images/ok.svg');
+}
+
+.sobre-lista p, .sobre-lista li {
+    font-family: "Roboto-light";
+}
+
+.sobre-img img {
+    width: 100%;
+}
+
+@media (max-width: 1050px) {
+    .sobre-nos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .sobre-descricao h2 {
+        font-size: 1.7rem;
+    }
+    .sobre-descricao p {
+        font-size: .95rem;
+    }
+    .sobre-lista li {
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,17 @@
+@import url('./bootstrap/bootstrap.min.css');
+@import url('./global/global.css');
+
+/* Home */
+@import url('./menuMega/menuMega.css');
+@import url('./home/header/header.css');
+@import url('./home/sobreNos/sobreNos.css');
+@import url('./home/estrutura/estrutura.css');
+
+/* Serviços */
+@import url('./servico/servico.css');
+
+/* Contato */
+@import url('./contato/contato.css');
+
+/* Footer */
+@import url('./footer/footer.css');

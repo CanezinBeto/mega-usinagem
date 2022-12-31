@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../../fonts/Poppins-SemiBold.ttf');
+}
+
+.header-bgd {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--p09);
+    height: 200px;
+    position: relative;
+}
+
+.header-bgd img {
+    max-width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    border-radius: 0px 50% 50% 0px;
+    box-shadow: 15px 0px 02px 0px #333, 35px 0px 02px 0px #c7deef;
+}
+
+.header-title {
+    text-align: center;
+    font-family: "Poppins";
+    color: var(--c01);
+    margin-top: 10px;
+}
+
+.header-title h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.header-title p {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1020px) {
+    .header-title h1 {
+        font-size: 2.5rem;
+    }
+    .header-title p {
+        font-size: 1.25rem;
+    }
+    .header-title {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 820px) {
+    .header-bgd {
+        height: 150px;
+    }
+    .header-bgd img {
+        max-width: 150px;
+    }
+    .header-title h1 {
+        font-size: 1.5rem;
+    }
+    .header-title p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .header-bgd {
+        height: 100px;
+    }
+    .header-bgd img {
+        display: none;
+    }
+    .header-title {
+        margin-top: 0px;
+    }
+}

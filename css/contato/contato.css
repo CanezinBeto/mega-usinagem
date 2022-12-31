@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-medium";
+    src: url('../../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url('../../fonts/Poppins-Regular.ttf');
+}
+
+.header-contato-bg {
+    background-image: url('../../images/contato-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18vh;    
+}
+
+.contato-header-titulo {
+    background-color: rgba(2, 22, 53, 0.7);
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    position: relative;
+    top: 35px;
+    border-radius: 4px;
+}
+
+.header-contato-bg h2 {
+    font-family: "Poppins";
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 580px) {
+    .contato-header-titulo {
+        max-width: 80%;
+    }
+    .header-contato-bg h2 {
+        font-size: 54px;
+    }
+}
+
+.contato-titulo h4 {
+    font-family: "Poppins-medium";
+    font-size: 32px;
+    margin-top: 62px;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px ;
+    margin-top: 50px;
+}
+
+
+.contato-fone-list li {
+    font-family: "Poppins-medium";
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+.contato-fone-list li::before {
+    content: '';
+    background-image: url('../../images/phone.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -30px;
+}
+
+.contato-endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.p-poppins {
+    font-family: "Poppins-medium";
+    font-size: 32px;
+}
+
+.p-poppins p {
+    font-family: "Poppins-medium";
+    font-size: 16px;
+}
+
+.p-poppins p:last-child {
+    margin-top: -15px;
+}
+
+.contato-info {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.contato-info p {
+    font-family: "Poppins-medium";
+    font-size: 14;
+    position: relative;
+}
+
+.contato-form-bg {
+    background-color: #044164;
+    padding: 34px 60px;
+}
+
+.contato-form {
+    font-family: "Poppins-regular";
+    font-size: 16px;
+    color: #fff;
+}
+
+.contato-form  label {
+    display: block;
+}
+
+.contato-form  input {
+    width: 100%;
+}
+
+.contato-form textarea {
+    width: 100%;
+    resize: none;
+}
+
+.button-form {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button-form button {
+    border: none;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border-radius: 4px;
+    color: #fff;
+    background-image: linear-gradient(180deg, #001D2D 0%, #000A0F 92.71%);
+}
+
+@media (max-width: 750px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .contato-endereco {
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    .contato-info {
+        display: none;
+    }
+
+    .p-poppins {
+        font-size: 20px;
+    }
+
+    .container-principal h4 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .contato-form-bg {
+        padding: 30px;
+    }
+}

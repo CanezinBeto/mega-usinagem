@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url('../../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url('../../fonts/Roboto-Light.ttf');
+}
+
+.footer-bg {
+    background-color: #000A0F;
+    margin-top: 60px;
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+
+.footer-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-redes p {
+    font-family: "Poppins";
+    margin-top: 20px;
+    color: var(--c04);
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contato h4 {
+    font-family: "Poppins";
+}
+
+.footer-contato {
+    color: var(--c04);
+}
+
+.footer-contato p {
+    font-family: "Roboto";
+}
+
+@media (max-width: 500px) {
+    .footer-principal {
+        gap: 40px;
+    }
+}
